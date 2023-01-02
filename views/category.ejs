@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cats and cats</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <script src='main.js'></script>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+           
+            <div><img src="<%= catImage.url %>"></div>
+            <div>
+                <article>
+                    <a href="/"><button>Back</button></a>
+                    <br>
+                    <header>
+                        <%= cat.name %> <img style="margin-left: 20px; height: 20px; width: auto;" src="https://countryflagsapi.com/png/<%=cat.origin%>" />
+                    </header>
+
+                    <body>
+                        <%= cat.description %>
+                    </body>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cats and cats</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='main.js'></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% categories.forEach((category) => { %>
+        <tr>
+            <td><%= category.id %></td>
+            <td><a href="category/<%= category.id %>"><%= category.name %></a></td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+</body>
+</html>
